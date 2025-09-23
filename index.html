@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mystic Yogi Shri Dattabal</title>
+    <meta
+      name="description"
+      content="Explore the teachings and literature of Mystic Yogi Shri Dattabal. Discover books, articles, lectures, and poems on divine love, consciousness, and spirituality."
+    />
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <!-- Custom CSS -->
+    <style>
+      :root {
+        --primary-color: #8b4513;
+        --secondary-color: #daa520;
+        --accent-color: #cd853f;
+        --light-bg: #f5f5dc;
+        --text-color: #333;
+        --header-bg: #654321;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: var(--text-color);
+        line-height: 1.6;
+      }
+
+      /* Navbar Styles */
+      .navbar {
+        background-color: var(--header-bg) !important;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 1rem 0;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      .navbar-brand {
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: white !important;
+      }
+
+      .nav-link {
+        color: rgba(255, 255, 255, 0.85) !important;
+        margin: 0 0.5rem;
+        transition: color 0.3s ease;
+      }
+
+      .nav-link:hover {
+        color: white !important;
+      }
+
+      .dropdown-menu {
+        border: none;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        border-radius: 8px;
+      }
+
+      .dropdown-item {
+        padding: 0.5rem 1rem;
+        transition: background-color 0.3s ease;
+      }
+
+      .dropdown-item:hover {
+        background-color: var(--light-bg);
+      }
+
+      /* Hero Section */
+      #slider {
+        background: linear-gradient(
+          135deg,
+          var(--primary-color) 0%,
+          var(--header-bg) 100%
+        );
+        color: white;
+        padding: 4rem 0;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+
+      #slider::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff20" d="M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,181.3C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>')
+          no-repeat bottom;
+        background-size: cover;
+      }
+
+      .logo img {
+        max-width: 150px;
+        height: auto;
+        margin-bottom: 1rem;
+      }
+
+      .caption h1 {
+        font-size: 2.5rem;
+        font-weight: 300;
+        margin-bottom: 1rem;
+        position: relative;
+        z-index: 1;
+      }
+
+      /* Section Headers */
+      .header-bg {
+        color: var(--primary-color);
+        padding: 1rem 2rem;
+        margin: 2rem 0;
+        font-weight: 600;
+        font-size: 2rem;
+        border-bottom: 3px solid var(--secondary-color);
+        display: inline-block;
+      }
+
+      /* Content Cards */
+      .about-page-container,
+      .about-page-container-2 {
+        background: white;
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-bottom: 2rem;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .about-page-container:hover,
+      .about-page-container-2:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+      }
+
+      .yellow {
+        background: linear-gradient(135deg, #fff9e6 0%, #fff3d3 100%);
+        border-left: 4px solid var(--secondary-color);
+      }
+
+      .black {
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        border-left: 4px solid var(--primary-color);
+      }
+
+      .about-image img,
+      .about-image-2 img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      }
+
+      /* Literature Cards */
+      .black,
+      .yellow {
+        padding: 1.5rem;
+        border-radius: 12px;
+        margin-bottom: 2rem;
+        height: 100%;
+        transition: transform 0.3s ease;
+      }
+
+      .black:hover,
+      .yellow:hover {
+        transform: translateY(-3px);
+      }
+
+      .content-scroll {
+        max-height: 200px;
+        overflow-y: auto;
+        margin-bottom: 1rem;
+        padding-right: 0.5rem;
+      }
+
+      .content-scroll::-webkit-scrollbar {
+        width: 6px;
+      }
+
+      .content-scroll::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 3px;
+      }
+
+      .content-scroll::-webkit-scrollbar-thumb {
+        background: var(--secondary-color);
+        border-radius: 3px;
+      }
+
+      /* Buttons */
+      .btn-default {
+        background-color: var(--accent-color);
+        color: white;
+        border: none;
+        padding: 0.5rem 1.5rem;
+        border-radius: 25px;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      .btn-default:hover {
+        background-color: #2980b9;
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Footer */
+      footer {
+        background-color: var(--header-bg);
+        color: white;
+        padding: 2rem 0;
+        margin-top: 3rem;
+      }
+
+      .social a {
+        color: white;
+        font-size: 1.5rem;
+        margin-right: 1rem;
+        transition: color 0.3s ease;
+      }
+
+      .social a:hover {
+        color: var(--secondary-color);
+      }
+
+      .pbk a {
+        color: var(--secondary-color);
+        text-decoration: none;
+      }
+
+      .pbk a:hover {
+        text-decoration: underline;
+      }
+
+      /* Container Width */
+      .container {
+        max-width: 1600px;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .caption h1 {
+          font-size: 1.8rem;
+        }
+
+        .header-bg {
+          font-size: 1.2rem;
+        }
+      }
+
+      /* Footer Styles */
+      .social a {
+        color: white;
+        font-size: 1.1rem;
+        margin-right: 0;
+        transition: color 0.3s ease;
+        text-decoration: none;
+      }
+
+      .social a:hover {
+        color: var(--secondary-color);
+      }
+
+      .pbk {
+        font-size: 0.9rem;
+      }
+
+      .pbk p {
+        margin-bottom: 0.25rem;
+      }
+
+      /* Smooth Scrolling */
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Animation */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .fade-in-up {
+        animation: fadeInUp 0.6s ease-out;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Modern Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <i class="bi bi-circle-square"></i> Mystic Yogi Shri Dattabal
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#books">
+                <i class="bi bi-book"></i> Books
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#articles">
+                <i class="bi bi-file-text"></i> Articles
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#lectures">
+                <i class="bi bi-mic"></i> Lectures
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#poems">
+                <i class="bi bi-pen"></i> Poems
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mailto:mayyam108@gmail.com">
+                <i class="bi bi-envelope"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="slider" class="fade-in-up">
+      <div class="container">
+        <div class="logo">
+          <img src="images/logo.png" alt="Mystic Yogi Shri Dattabal Logo" />
+        </div>
+        <div class="caption">
+          <h1>"Life is Divine Love Seeking Its Origin"</h1>
+          <p class="lead">Explore the profound teachings of Shri Dattabal</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+      <!-- About Section -->
+      <section id="about" class="mb-5">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h2 class="header-bg">About Shri Dattabal</h2>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-8">
+            <div class="about-page-container yellow">
+              <p>
+                To Sri Dattabal consciousness while living ordinary life is
+                essential to tune in with the divine love and compassion of the
+                universe. Religions to him were different pathways towards the
+                ultimate reality. They were the different expressions of the
+                divine. He maintained that the true spirit of the religion lay
+                in liberality, love and not in rigidity. He practiced what he
+                professed and stood as an example. Being a contemplative seer,
+                he was concerned with miseries of the world. He took an activist
+                role on behalf of people marginalised on the basis of caste,
+                class and other diversities.
+              </p>
+              <p>
+                Sri Dattabal was born on 3rd April 1941 at Kolhapur Maharashtra.
+                He had his formal education in Physics and lived in Kolhapur.
+                His mother Sushila Devi became his follower and His father was a
+                renowned educationist, Vedic scholar and writer. He left his
+                body on 3rd September 1982. He predicted his date of death ten
+                years earlier.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="about-image">
+              <img src="images/2.png" alt="Shri Dattabal" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+        <div class="row g-4 mt-2">
+          <div class="col-lg-4">
+            <div class="about-image-2">
+              <img
+                src="images/3.png"
+                alt="Shri Dattabal Teaching"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="about-page-container-2 black">
+              <p>
+                Sri Dattabal was clairvoyant by birth and grew as a very
+                sensitive child being able to see the inner side of nature.
+                'While looking within himself he used to feel a different space
+                – dimension in his heart, which awakened in him a sense of non-
+                materiality about the material world. He could speak intimately
+                with the nature and so called inanimate objects. As a teenager,
+                he felt a tremendous overwhelming force of love, which he could
+                also transmit and heal. He always regarded himself as an
+                instrument of divine through which love is transformed into
+                different powers'.
+              </p>
+              <p>
+                He explained his philosophy of divine love in English, Marathi
+                and Hindi through discussions, discourses and his audience
+                included villagers, common women and men living ordinary lives,
+                professionals, academicians, politicians, etc. Sri Dattabal was
+                tireless and keen learner and was open to different philosophies
+                He travelled extensively within India and abroad addressing
+                contemporary issues connecting them to deep spirituality and
+                love through his lectures, writings and discussions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Books Section -->
+      <section id="books" class="mb-5">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h2 class="header-bg">Featured Books</h2>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="black h-100">
+              <h3><i class="bi bi-book-heart"></i> Messenger of Divine Love</h3>
+              <div class="content-scroll">
+                <p>
+                  It is an urge to manifest the true spiritual nature that gives
+                  the mundane universe an ability of projection, because an
+                  inherent spiritual urge to manifest it own Divine nature is
+                  eternally present even in an atom. Rate of vibrations in the
+                  primordial substance of matter is accelerated by the pressure
+                  of the Divine urge to manifest and that gives birth to life,
+                  mind and the individualized Divine in the form of human race
+                </p>
+              </div>
+              <a
+                href="books/messenger-of-divine-love-part-1-final.pdf"
+                target="_blank"
+                class="btn btn-default"
+              >
+                <i class="bi bi-book"></i> Read More
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="yellow h-100">
+              <h3><i class="bi bi-sun"></i> The Psychic Sun</h3>
+              <div class="content-scroll">
+                <p>
+                  "Our organs of perception are the natural results of
+                  evolution, which started from the inanimate Mass. So
+                  perceptibility is in the phenomenal existence is indeed the
+                  material perceptibility. At present it is knowing the mass
+                  through the mass only. If the rhythm of light, which is latent
+                  in energy, is to be perceived, an organ of light made of light
+                  atoms will be required. That organ of light is the flame-eye.
+                  The flame - eye or the power of sensing is latent in every
+                  human being, which will eventually develop into a human
+                  faculty during the course of evolution"
+                </p>
+              </div>
+              <a
+                href="books/the-psychic-sun.pdf"
+                target="_blank"
+                class="btn btn-default"
+              >
+                <i class="bi bi-book"></i> Read Book
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="black h-100">
+              <h3>
+                <i class="bi bi-triangle"></i> Triangular Leadership Practice
+              </h3>
+              <div class="content-scroll">
+                <p>
+                  "This booklet introduces the three practices called Triangular
+                  Leadership Practices –Stillness Practice, Body Training and
+                  Speaking the Un-speakable. Stillness Practice is about
+                  stilling the mind to create space for the intuitive and 'all
+                  knowing' part of us to emerge and guide us through our path
+                  and purpose in life. Speaking the unspeakable is a practice of
+                  dialogue that lets us speak our true fears, thoughts, needs,
+                  emotions, and true stories of one self. Body Training as a
+                  practice helps us to become mindful about our bodies and its
+                  unlimited wisdom.
+                </p>
+              </div>
+              <a
+                href="books/triangular-leadership-practice.pdf"
+                target="_blank"
+                class="btn btn-default"
+              >
+                <i class="bi bi-book"></i> Read Book
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row g-4 mt-2">
+          <div class="col-md-4">
+            <div class="yellow h-100">
+              <h3><i class="bi bi-moon"></i> Psychic Moon</h3>
+              <div class="content-scroll">
+                <p>
+                  "You find your own path to walk on. It will be the most
+                  difficult task in this life…" This book offers guidance and
+                  hope to women to access their inner guide to find and walk
+                  their path in this world. The book is presented in three
+                  sections of Moon Cycle1, 2 & 3. Moon cycle1 presents the
+                  connection of woman's body to cosmos, Moon mother, Earth
+                  Mother, and other women and teaches a set of practices called
+                  triangular practices. The second moon cycle builds
+                  perspectives on the web of energetic connections to cosmos,
+                  earth and women. Third moon cycle deals with mystic processes
+                  and energetic connections between cosmos, earth and women.
+                </p>
+              </div>
+              <a
+                href="books/psychic-moon.pdf"
+                target="_blank"
+                class="btn btn-default"
+              >
+                <i class="bi bi-book"></i> Read Book
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="black h-100">
+              <h3><i class="bi bi-heart-arrow"></i> Message to Youth</h3>
+              <div class="content-scroll">
+                <p>
+                  The spring of youth draws towards itself the surging throngs
+                  of dreams and out of these you choose for yourself a dream
+                  which is in consonance with your inner being. You then
+                  struggle life long to make the dream a reality. During this
+                  struggle you pass several stages. You have to march ahead
+                  through the shadow of success and failure. Some of your dreams
+                  do materialise but most of them remain just dreams. Those who
+                  do not have any dreams at all and yet do not aspire to have
+                  dreams are either stagnating in the dark cell of ignorance or
+                  the goddess of youth has passed away from their life, without
+                  taking their slightest notice.
+                </p>
+              </div>
+              <a
+                href="books/message-to-youth.pdf"
+                target="_blank"
+                class="btn btn-default"
+              >
+                <i class="bi bi-book"></i> Read Book
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="yellow h-100">
+              <h3><i class="bi bi-lightbulb"></i> Dattabal's New Philosophy</h3>
+              <div class="content-scroll">
+                <p>
+                  "In accordance with his new philosophy, an action or a thing
+                  can be seen on the 'vibratory plane' before it happens on the
+                  physical plane. The timing I mean – how long time it can be
+                  seen beforehand, may differ according to circumstances. Seen
+                  on the vibratory plane, a thing seems some what different
+                  owing to the magnetic waves – that is what shri. Dattabal
+                  explained to us. Further he says "beyond the vibratory plane
+                  there is the inspiratory plane. There are in all seven planes.
+                  Amongst one of them (the last one), there is the plane on
+                  which everything – even a chair has its 'Point of Existence',
+                  from where its development starts, before it is created on the
+                  physical plane".
+                </p>
+              </div>
+              <a
+                href="books/philosophy-and-adaptation.pdf"
+                target="_blank"
+                class="btn btn-default"
+              >
+                <i class="bi bi-book"></i> Read Book
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Articles Section -->
+      <section id="articles" class="mb-5">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h3 class="header-bg">Articles</h3>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="yellow h-100">
+              <h3>Is Democracy Being Outdated?</h3>
+              <div class="content-scroll">
+                <p>
+                  In the process of evolution mankind achieves a certain level
+                  of intelligence and ruling government reveals the mental
+                  status of the people. while men of quick intelligence
+                  sacrificed their life for establishing democracy. At this
+                  stage, the very thought of democracy getting obsolescent
+                  sounds to be fanciful. However, let us try to study the rise
+                  of democracy in a new light.
+                </p>
+                <p>
+                  when man took a leap forward from instinct to intelligence his
+                  entire mental and social pattern was revolutionised. Now when
+                  he will enter into the realm of intuition he must be prepared
+                  for mutation. The form of the government which intuitive
+                  people will choose may not be socialistic nor democratic. so
+                  the democratic values ( we so much cherish today) will crumble
+                  down.
+                </p>
+                <p>
+                  Since intuition comes from the deepest core of existence in
+                  man, which is in resonance with the cosmic mind, all parochial
+                  governments will become outdated and the world government may
+                  emerge. Here there will not be green revolutions nor economic
+                  revolutions but there will be frequent revolutions of
+                  consciousness.
+                </p>
+              </div>
+              <a
+                href="articles/is-democracy-being-outdated.pdf"
+                target="_blank"
+                class="btn btn-default"
+              >
+                <i class="bi bi-file-text"></i> Read Article
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="black h-100">
+              <h3>Anatomy of a Hippie</h3>
+              <div class="content-scroll">
+                <p>
+                  The sacred red mountain of Arunachalam was bathing in the
+                  mist. Rapt in deep Samadhi its peak was thrusting into the
+                  azure sky. Shri Ramana Maharishi had unveiled life's secret at
+                  this holy place. I was one of the pilgrims, set out to visit
+                  the Maharishi's hermitage.
+                </p>
+                <p>
+                  In the medley of dark, brown and yellow there was a
+                  white-complexioned American bhakta who looked very
+                  conspicuous. He was a half naked hippie with a loin-cloth
+                  barely covering his shame. He had become familiar with that
+                  place. His eyes radiated love and compassion. Most of his time
+                  was spent in meditation, prayer and worship of the Sun.
+                </p>
+              </div>
+              <a
+                href="articles/anatomy-of-a-hippie.pdf"
+                target="_blank"
+                class="btn btn-default"
+              >
+                <i class="bi bi-file-text"></i> Read Article
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row g-4 mt-2">
+          <div class="col-md-4">
+            <div class="yellow h-100">
+              <h3>Is Suicide A Crime?</h3>
+              <div class="content-scroll">
+                <p>
+                  It is only people who are indolent and weak that are trapped
+                  in silken cocoon of self-centeredness. They choose the warmth
+                  of cocoon to the joy of freedom. By binding the life that is
+                  winged, they cripple themselves. Life moves forward swiftly
+                  and those who do not keep pace with its speed are dragged
+                  along mercilessly. Allow nature to act upon you, to perform
+                  the painful surgery on your ego. And by doing so, it is trying
+                  to bring you to state of more conscious existence. It is
+                  trying to return you to the divine kingdom, to which you
+                  originally belong.
+                </p>
+              </div>
+              <a
+                href="articles/is-suiciide-a-crime.pdf"
+                target="_blank"
+                class="btn btn-default"
+              >
+                <i class="bi bi-file-text"></i> Read Article
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="black h-100">
+              <h3>On Death</h3>
+              <div class="content-scroll">
+                <p>
+                  Death has amused poets, thrilled philosophers. Majestically
+                  awed religionists and consoled those without hope. It has a
+                  charm like Mona Lisa's smile. It has an aura of unknown. The
+                  face of death is not necessarily hostile but the subconscious
+                  has an ingrained fear of death. It is the fear of death that
+                  gives men the biological intuition to save themselves.
+                </p>
+              </div>
+              <a
+                href="articles/on-death.pdf"
+                target="_blank"
+                class="btn btn-default"
+              >
+                <i class="bi bi-file-text"></i> Read Article
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="yellow h-100">
+              <h3>Psychic Discovery in America</h3>
+              <div class="content-scroll">
+                <p>
+                  Right from Vedas to Einstein and from Max Plank to Cleve
+                  Baxter who had explored hearts of plants and successfully
+                  recorded their sentiments and feelings, my talk included
+                  references to sir.J.C Bose and also to Shri. Ramakrishna,
+                  Swami Vivekananda and Shri Shankaracharya. But the saffron
+                  robed parakeets of Vedanta philosophy exhibited their petty
+                  jealousies and total deprivation of broad mindedness and
+                  genuine appreciation. Men have always thought of envy as a
+                  feminine trait. However I experienced it in saffron robed
+                  sanyasins also.
+                </p>
+              </div>
+              <a
+                href="articles/paychic-discovery-in-america.pdf"
+                target="_blank"
+                class="btn btn-default"
+              >
+                <i class="bi bi-file-text"></i> Read Article
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row g-4 mt-2">
+          <div class="col-md-4">
+            <div class="black h-100">
+              <h3>Conquest of Sex is a Challenge</h3>
+              <div class="content-scroll">
+                <p>
+                  As divine love passes through different regions of our mind,
+                  it is refracted. There is a refraction in the subconscious
+                  mind which we called the libido, another refraction in the
+                  conscious mind, which is known as the ego, and the final
+                  refraction in the body layer which we call sex. Sex is not a
+                  hostile force to be fought with, for sex is but a shadow and
+                  its chase does not bring about any sublimation. Nature has
+                  endowed this force for the dual purpose of procreation and
+                  transformation.
+                </p>
+              </div>
+              <a
+                href="articles/conquest-of-sex-is-a-challenge.pdf"
+                target="_blank"
+                class="btn btn-default"
+              >
+                <i class="bi bi-file-text"></i> Read Article
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="yellow h-100">
+              <h3>Asceticism</h3>
+              <div class="content-scroll">
+                <p>
+                  If you ever think of denouncing this multifaceted life, if you
+                  ever become indifferent to the grandeur of and majesty of
+                  Mother Nature, if you think of abandoning your house and
+                  deserting your wife and children, if intense passions of love
+                  and ambition scorch you instead of raising you to lofty
+                  height, if you feel that journey on earth is a mirage, if you
+                  despise women and consider that they lead you to hell, if you
+                  think that innocent and happy children obstruct your spiritual
+                  progress, then do not have the wrong notion that asceticism
+                  has enlightened you, on the contrary you have become
+                  imbalanced and frustrated.
+                </p>
+              </div>
+              <a
+                href="articles/asceticism.pdf"
+                target="_blank"
+                class="btn btn-default"
+              >
+                <i class="bi bi-file-text"></i> Read Article
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="black h-100">
+              <h3>Symphonies of Love</h3>
+              <div class="content-scroll">
+                <p>
+                  It is a fine morning. Everything is silent. The sun has risen
+                  just now. Flowers are blooming, trees are silently radiating
+                  their inner calm. There is mute music on the earth, it is an
+                  eternal music. Trees, mountains, stones, animals are all
+                  different notes of this music and man is an octave amongst
+                  these notes. The divine is humming in the music, this is the
+                  music of love. Everything here is trying to express this music
+                  of love.
+                </p>
+              </div>
+              <a
+                href="articles/symphonies-of-love.pdf"
+                target="_blank"
+                class="btn btn-default"
+              >
+                <i class="bi bi-file-text"></i> Read Article
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Lectures Section -->
+      <section id="lectures" class="mb-5">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h3 class="header-bg">Lectures</h3>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="yellow h-100">
+              <h3>In the Light of Inner Flame</h3>
+              <div class="content-scroll">
+                <p>
+                  Friends, you know that under the layers of ice in snow-clad
+                  cities of europe, certain well formed designs are seen. Few of
+                  you might even be knowing the design patterns of the Tantric
+                  system like Shri Chakra. Now please understand that the
+                  evolutionary urge in matter also, while expressing itself
+                  takes takes up a form.
+                </p>
+                <p>
+                  Today we shall try to travel towards, the light of the inner
+                  flame. The flame which is in the centre of our conscious-ness,
+                  the very nucleus of our existence. This flame has a centre
+                  everywhere and circumference nowhere. this the realm which is
+                  beyond the threshold of the subconscious mind and
+                  psychologists have failed to explore it. When you penetrate
+                  deep within yourself, you are bound to come across the hell of
+                  subconscious mind. But you must pass through it, as every
+                  mystic has to travel through it: then only you come upon that
+                  centre which is everywhere and then only you see this flame,
+                  the pulsating centre of consciousness and the moment you come
+                  to this centre you become absolutely fearless.
+                </p>
+              </div>
+              <a
+                href="lectures/In-the-light-of-the-inner-flame.pdf"
+                target="_blank"
+                class="btn btn-default"
+              >
+                <i class="bi bi-mic"></i> Read Lecture
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="black h-100">
+              <h3>Is God Dead?</h3>
+              <div class="content-scroll">
+                <p>
+                  I think the basic cause of evolution from a lower form to the
+                  higher, is the urge of self-expression, endowed in each and
+                  every micro-organism. Hegal was perfectly correct when he said
+                  that life evolves through a process of thesis, anti-thesis and
+                  synthesis. Even a uni-cellular micro organism proposes to seek
+                  some thing, it tries to unfold its inner nature just like a
+                  tiny seed that tries to unfold itself to finally become a
+                  grown up tree with huge branches, hundreds of leaves and
+                  fruits. This is the thesis of the cell.
+                </p>
+              </div>
+              <a
+                href="lectures/is-god-dead.pdf"
+                target="_blank"
+                class="btn btn-default"
+              >
+                <i class="bi bi-mic"></i> Read Lecture
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="yellow h-100">
+              <h3>Sex to Divine Love</h3>
+              <div class="content-scroll">
+                <p>
+                  So, Divine love is universal. It is the realisation of the
+                  universal force, and when one is aware of the innermost flame,
+                  the capacity of transformation is spontaneously achieved. So,
+                  when a cosmic ray touches the earth's hemisphere it produces
+                  an evolutionary change, a cosmic chemical change, bringing
+                  about mutation. The cosmic ray has definite frequency. It
+                  affects the earth molecule, accelerates their frequency and
+                  brings about an evolved emergent form. The ray of divine love
+                  has the highest rate of vibrations. It can, therefore,
+                  penetrate through anything in this universe. This vibratory
+                  rate can be infused into the organic and inorganic molecules
+                  of the earth to bring about the transformation. So, when you
+                  become aware of the divine love everything around you changes
+                  structurally and organically.
+                </p>
+              </div>
+              <a
+                href="lectures/Sex-to-divine-love.pdf"
+                target="_blank"
+                class="btn btn-default"
+              >
+                <i class="bi bi-mic"></i> Read Lecture
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Poems Section -->
+      <section id="poems" class="mb-5">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h3 class="header-bg">Poems</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="black">
+              <h3>The Duality</h3>
+              <div class="content-scroll">
+                <p>
+                  Billions of light years<br />The Sun exists<br />Throwing upon
+                  the earth<br />An unknown light.<br />I was puzzled<br />And
+                  asked my inner space<br />Which is the Sun?<br />Where are the
+                  rays?<br />In great darkness<br />the answer murmured in my
+                  heart<br />"the Sun of love<br />Through the prism of earth<br />If
+                  you understand...<br />I am in you...You...You.. alone
+                </p>
+              </div>
+              <a
+                href="poems/shri-dattabal.pdf"
+                target="_blank"
+                class="btn btn-default"
+              >
+                <i class="bi bi-pen"></i> Read Poems
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Modern Footer -->
+    <footer id="contact">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-8">
+            <div class="social">
+              <a href="mailto:mayyam108@gmail.com" aria-label="Email">
+                <i class="bi bi-envelope"></i> mayyam108@gmail.com
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 text-md-end">
+            <div class="pbk">
+              <p class="mb-0">
+                &copy; 2025 Mystic Yogi Shri Dattabal. All Rights Reserved.
+              </p>
+              <p class="mb-0">
+                Powered by
+                <a
+                  href="http://www.kaos.agency"
+                  target="_blank"
+                  class="text-decoration-none"
+                  >KAOS</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+      // Add smooth scrolling to all links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            // Calculate offset for sticky navbar (approximately 80px)
+            const offsetPosition = target.offsetTop - 80;
+
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: "smooth",
+            });
+          }
+        });
+      });
+
+      // Add fade-in animation to elements when they come into view
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const observer = new IntersectionObserver(function (entries) {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("fade-in-up");
+          }
+        });
+      }, observerOptions);
+
+      // Observe all sections
+      document.querySelectorAll("section").forEach((section) => {
+        observer.observe(section);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "mystic-yogi-shri-dattabal",
+  "compatibility_date": "2025-01-29",
+  "assets": {
+    "directory": "./"
+  },
+  "routes": [
+    {
+      "pattern": "mysticyogidattabal.in",
+      "custom_domain": true
+    },
+    {
+      "pattern": "www.mysticyogidattabal.in",
+      "custom_domain": true
+    }
+  ]
+}
