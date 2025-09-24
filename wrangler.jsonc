@@ -13,5 +13,6 @@
       "pattern": "www.mysticyogidattabal.in",
       "custom_domain": true
     }
-  ]
+  ],
+  "workers_dev": false
 }

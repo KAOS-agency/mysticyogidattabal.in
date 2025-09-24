@@ -254,8 +254,47 @@
 
       /* Responsive */
       @media (max-width: 768px) {
+        /* Hide icon left to site title */
+        .navbar-brand i {
+          display: none;
+        }
+
+        /* Make title smaller and less thick to align with menu icon */
+        .navbar-brand {
+          font-size: 1.1rem !important;
+          font-weight: 500 !important;
+          padding-top: 0.25rem;
+        }
+
+        /* Adjust navbar toggler alignment */
+        .navbar-toggler {
+          padding: 0.25rem 0.5rem;
+        }
+
+        /* Hero section - reorder photo and text */
+        #slider {
+          padding: 2rem 0;
+        }
+
+        #slider .container {
+          display: flex;
+          flex-direction: column-reverse;
+        }
+
+        .logo img {
+          max-width: 100px;
+          height: auto;
+          margin-bottom: 0.5rem;
+          padding: 0;
+        }
+
         .caption h1 {
-          font-size: 1.8rem;
+          font-size: 1.5rem;
+          margin-bottom: 0.5rem;
+        }
+
+        .caption .lead {
+          font-size: 0.9rem;
         }
 
         .header-bg {

@@ -1,0 +1,31 @@
+{
+  "name": "mystic-yogi-shri-dattabal",
+  "version": "1.0.0",
+  "description": "Static website for Mystic Yogi Shri Dattabal - Spiritual teachings, books, articles, lectures, and poems",
+  "main": "index.html",
+  "scripts": {
+    "dev": "bunx wrangler dev",
+    "deploy": "bunx wrangler deploy"
+  },
+  "keywords": [
+    "spirituality",
+    "mysticism",
+    "yoga",
+    "divine-love",
+    "consciousness",
+    "teachings",
+    "books",
+    "articles",
+    "lectures",
+    "poems",
+    "static-site",
+    "cloudflare-workers"
+  ],
+  "author": "KAOS Agency",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:KAOS-agency/mysticyogidattabal.in.git"
+  },
+  "homepage": "https://mysticyogidattabal.in"
+}
